@@ -4,7 +4,7 @@
 
 A simple calendar app for scheduling the work day allowing the user to save events for each hour of the day. Each time block is color coded to indicate whether it is in the past, present, or future. This application runs in the browser and features dynamic HTML, CSS, JavaScript, and jQuery. Moment.js is used to work with the date and time. 
 
-Link to deployed application: https://monicapong.github.io/challenge5
+Link to deployed application: https://monicapong.github.io/challenge5scheduler
 
 ## Usage
 
@@ -22,4 +22,4 @@ Scroll to the respective hour, and enter the event as needed. Click on the save 
 
 ## License
 
-Please refer to the GitHub Repository for licensing information. Link to GitHub repository: https://github.com/monicapong/challenge5
+Please refer to the GitHub Repository for licensing information. Link to GitHub repository: https://github.com/monicapong/challenge5scheduler
