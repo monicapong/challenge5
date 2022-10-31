@@ -41,3 +41,22 @@ saveBtn.on('click', function() {
     //Save time and description as an object in localStorage
     localStorage.setItem(time, description);
 });
+
+//Saved events persist after refreshed page
+function renderDescription() {
+    $('.hour').each(function() {
+        //Sets respective hour class text to a variable
+        var hour = $(this).text();
+        //Retrieve data for each respective hour from local storage
+        var description = localStorage.getItem(hour);
+
+        //If a description exists
+        if (description !== null) {
+            //Set value to the respective description 
+            $(this).siblings('.description').val(description);
+        };
+    });
+};
+
+//Calls renderDescription to persist saved events after refreshing
+renderDescription();
