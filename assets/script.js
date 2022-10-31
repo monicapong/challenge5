@@ -24,3 +24,20 @@ function timeColorCode() {
         };
     });
 };
+
+//Calls timeColorCode to color code each hour 
+timeColorCode();
+
+//Access element using class
+var saveBtn = $('.saveBtn');
+
+//Add click event to saveBtn element to save description to localStorage
+saveBtn.on('click', function() {
+    //Sets respective hour class text to a variable
+    var time = $(this).siblings('.hour').text();
+    //Sets respective description value to a variable
+    var description = $(this).siblings('.description').val();
+
+    //Save time and description as an object in localStorage
+    localStorage.setItem(time, description);
+});
